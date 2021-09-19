@@ -1,0 +1,270 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Portfolio</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+      <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+      <script type="text/javascript" src="../../Scripts/bootstrap.bundle.min.js"></script>
+
+<script>
+    function onloadf(){
+      var y = localStorage.getItem("Toggled");
+      if (y == '1'){
+        flipcolors();
+      }
+    }
+  function swapText1() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About My Artwork";
+
+    var x = document.getElementById("textcontent");
+    x.innerHTML = "I designed and drafted this cool model of a ballista a while back. At the time I wanted to use it as an asset for a comic book I wanted to write (which I never got around to). However, I still think it looks really cool, so I decided to share it on my website. As you can probably tell from its look, it fits more in a fantasy world than the real one, but I think learning about different kinds of winches as I was making it was pretty neat. I made this in Google Sketchup, which is pretty nifty for 3d artwork if you want to take a look at it.";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "www.sketchup.com/";
+    y.href = "https://www.sketchup.com/";
+    y2.innerHTML = "";
+    y2.href = "#";
+  }
+  function swapText2() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About My Website";
+
+    var x = document.getElementById("textcontent");
+    x.innerHTML = "Here is the website I made for class! It took me a while and I had to learn html/css/js from scratch to do it, so I hope it looks good to you! You may notice that you are already on this website; if you are here to grade my website, please pretend you didn’t notice. If not, this was done to help fulfill some of the requirements of the project assignment. You can check out all the files for this website on the github repo linked below. ";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "github.tamu.edu/zli2018/MyPersonalWebsite";
+    y.href = "https://github.tamu.edu/zli2018/MyPersonalWebsite";
+    y2.innerHTML = "";
+    y2.href = "#";
+  }
+  function swapText3() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About U-Challenge";
+
+    var x = document.getElementById("textcontent");
+    x.innerHTML = "In the Spring Semester of 2019, my friends and I entered the U-Challenge competition: where teams of undergraduate students are assigned a residence hall, for which we had to propose ways to improve their efficiency when it came to utilities like water, electricity, etc. We made it into the final round and placed third in the competition, which was impressive at the time because we were the only freshmen who got that far";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "https://reslife.tamu.edu/living/sustainability/u-challenge/";
+    y.href = "https://reslife.tamu.edu/living/sustainability/u-challenge/";
+    y2.innerHTML = "";
+    y2.href = "#";
+  }
+  </script>
+  <script type = "text/javascript">
+    function flipcolors(){
+      if (! document.body.classList.contains('invert')){
+        document.body.classList.add('invert');
+        localStorage.setItem("Toggled","1");
+        fliphelp();
+      }
+      else{
+        document.body.classList.remove('invert');
+        localStorage.setItem("Toggled","0");
+        (document.getElementById("background")).classList.remove('inverted');
+      }
+      
+    }
+    function fliphelp(){
+      (document.getElementById("background")).classList.add('inverted');
+    }
+  </script>
+
+  <style id="compiled-css" type="text/css">
+        body.invert {
+          filter: invert(1);
+          /*background-color:rgb(23, 22, 27);*/
+        }
+        .inverted{
+          filter:invert(1);
+        }
+      .carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+      }
+      .graytext{
+        color:gray;
+      }
+      .py-5{
+        background-color:gray;
+      }
+      .background-item{
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .caption1{
+          color : black;
+      }
+      .caption2{
+        color: black;
+      }
+      .caption3{
+          color: white;
+      }
+      .carousel .carousel-indicators {
+        background-color: goldenrod;
+      }
+      .carousel .carousel-indicators .active {
+        background-color: black;
+      }
+      .carousel-control-next,
+      .carousel-control-prev /*, .carousel-indicators */ {
+          filter: invert(100%);
+      }
+      .whitetext{
+        color:white;
+      }
+      .blacktext{
+        color:black;
+      }
+      .resize_me{
+        height: 750px;
+        width: 1000px;
+        resize: both;
+        overflow: auto;
+        }
+      .resize_me2{
+      height: 750px;
+      width: 1000px;
+      resize: both;
+      overflow: auto;
+      }
+      .bodytitle{
+        color:blue;
+      }
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+  <script>
+    ('.carousel').carousel({ interval: false });
+  </script>
+
+</head>
+<body onload = "swapText2();onloadf()">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Zeling Li (Portfolio) </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link colorme" href="../../Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Qualifications.html">Qualifications</a> <!--Make links to other pages-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Portfolio.html">Portolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Services.html">Services</a>
+        </li>
+        <button onclick = "flipcolors()" class="blacktext">Toggle Color</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-interval = "false">
+    <div class="carousel-indicators">
+      <button type="button" onclick = "swapText1()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" onclick = "swapText2()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+      <button type="button" onclick = "swapText3()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner" id = "background">
+      <div class="carousel-item " style="background-image: url('../../WallMountArtillery2.png')">
+        <div class="carousel-caption caption1">
+          <a class = "" href="../../WallArtillery.skp" download>
+            <p>Download my 3d concept art (Google Sketchup File)</p>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item active" id = "background">
+        <div class="carousel-caption caption2">
+          <iframe class = "resize_me" src="../../Index.html" title="Recursive"></iframe>
+          <p></p>
+
+          <a target = "_blank" rel = "noopener noreference" class = "" href="https://cranky-turing-fd0f38.netlify.app/">
+            <p>Visit my website here if the embedding doesn't load</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item Scale-Me" id = "background">
+        <div class="carousel-caption caption2">
+          <iframe class = "resize_me2" src="../../U1-Presentation.html" title="Recursive"></iframe>
+          <p></p>
+
+          <a class = "" href="../../U1-Presentation.html" download>
+            <p>Download this Powerpoint!</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <p id = "titlecontent" class="bodytitle"></p>
+    <p class="lead" id = "textcontent"></p>
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks"></a>
+    <p></p>
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks2"></a>
+
+  </div>
+</section>
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "yezxdwv3"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+
+
+</body></html>

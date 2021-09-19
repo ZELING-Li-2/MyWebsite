@@ -1,0 +1,282 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Qualifications</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>
+  function onloadf(){
+    var y = localStorage.getItem("Toggled");
+    if (y == '1'){
+      flipcolors();
+    }
+  }
+  function swapText1() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About My Certificate";
+
+    var x = document.getElementById("textcontent");
+    x.innerHTML = "I first started seriously looking into machine learning during the winter of 2020-2021. In my opinion, its is one of the most rapidly advancing fields in computer science. For example, GANs (generative adversarial networks, which are the basis for most machine learning algorithms that can generate convincing image or video outputs) were only invented in 2014, but now one can find deepfake videos all over the place. I began learning about machine learning by starting Lawrence Moroney’s “DeepLearning.AI TensorFlow Developer Professional Certificate” course on Coursera, and I got this certificate a few weeks later on my first try. I highly recommend TensorFlow as a platform for machine learning projects. I find it easy to prototype with, especially when doing custom training loops, and relatively straightforward to learn. I also recommend Kaggle.com as a great place to find interesting projects to play with. ";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "kaggle.com";
+    y.href = "https://www.kaggle.com";
+    y2.innerHTML = "tensorflow.org";
+    y2.href = "https://tensorflow.org";
+
+
+    z = document.getElementById("textlinks3");
+    z.innerHTML = "pytorch.org";
+    z.href = "https://pytorch.org";
+
+    q = document.getElementById("textlinks4");
+    q.innerHTML = "The course I took";
+    q.href = "https://www.coursera.org/professional-certificates/tensorflow-in-practice";
+  }
+  function swapText2() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About My Resume";
+
+    var x = document.getElementById("textcontent");//gotta change this text to be better.
+    x.innerHTML = "My education and my personal projects have granted me a variety of technical skills; specifically, in the fields of software development and engineering. I believe the text below is a good summary of my abilities. \n\n I can confidently say that I count as a python expert. Pretty much everything I’ve written for my Aerospace classes has been in python, and I have a LinkedIn skill badge too. All the machine learning code I’ve written has also been in python, mostly using the TensorFlow and PyTorch platforms.\n\n Speaking of which, I have a TensorFlow Certificate! I’ve gotten really into machine learning in the past year and a half and I plan to start pursuing a career in it by taking machine learning classes in school. I spent all summer doing a personal project using TensorFlow, and although I’ve gotten very good at getting my code to run, my project was a little more ambitious than my algorithm was well thought out and unfortunately, I still have nothing to show for it. But check back here at my website in a few months, I may have made some progress by then!\n\n I am also proficient in C++. In addition, I have learned a good amount of JavaScript, HTML/CSS, Haskell and Java for my classes. I made this website by myself within a couple weeks of finding out what CSS was in the first place, so hopefully that can be taken as a sign that I’m good at learning.\n\n As you will be able to see from the courses on my resume, I also have a solid background in physics, math and engineering. I’d like to think that will help me a lot in my future software career, especially if I work on a lot of engineering related projects. Some less relevant skills: I have experience modeling and drafting in Solidworks. I have also used MATLAB as a computational tool a lot for my classes. Also, I have a glider pilots license! I know that last one is unlikely to come in handy in my career, but I still think its cool enough to mention. \n\n ";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "My Tamu Github page";
+    y.href = "https://github.tamu.edu/zli2018/";
+    y2.innerHTML = "My Linked In";
+    y2.href = "https://www.linkedin.com/in/zeling-li-a9b793194/";
+
+    z = document.getElementById("textlinks3");
+    z.innerHTML = "My Personal GitHub page";
+    z.href = "https://github.com/ZELING-Li-2/";
+
+    q = document.getElementById("textlinks4");
+    q.innerHTML = "";
+    q.href = "#";
+  }
+  function swapText3() {
+    var w = document.getElementById("titlecontent");
+    w.innerHTML = "About My License";
+
+    var x = document.getElementById("textcontent");
+    x.innerHTML = "In the summer of 2017, I learnt to fly gliders with the Royal Canadian Air Cadets at Gimli, Manitoba. It was an absolute blast, but it was also a lot of hard work and study. If you ever get the chance to go gliding (also known as sailplaning) you really should, there’s nothing more fun than riding into the sky on a column of hot air (other than riding into the sky on a mountain wave or something, but I never caught one of those). ";
+    var y = document.getElementById("textlinks");
+    var y2 = document.getElementById("textlinks2");
+    y.innerHTML = "";
+    y.href = "#";
+    y2.innerHTML = "";
+    y2.href = "#";
+
+    z = document.getElementById("textlinks3");
+    z.innerHTML = "";
+    z.href = "#";
+
+    q = document.getElementById("textlinks4");
+    q.innerHTML = "";
+    q.href = "#";
+  }
+  </script>
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+      <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+      <script type="text/javascript" src="../../Scripts/bootstrap.bundle.min.js"></script>
+
+  <script type = "text/javascript">
+    function flipcolors(){
+      if (! document.body.classList.contains('invert')){
+        document.body.classList.add('invert');
+        localStorage.setItem("Toggled","1");
+        fliphelp();
+      }
+      else{
+        document.body.classList.remove('invert');
+        (document.getElementById("background1")).classList.remove('inverted');
+        (document.getElementById("background2")).classList.remove('inverted');
+        (document.getElementById("background3")).classList.remove('inverted');
+        localStorage.setItem("Toggled","0");
+      }
+      
+    }
+    function fliphelp(){
+      (document.getElementById("background1")).classList.add('inverted');
+      (document.getElementById("background2")).classList.add('inverted');
+      (document.getElementById("background3")).classList.add('inverted');
+    }
+    function scrolldown(){
+      window.scrollTo(0,document.body.scrollHeight);
+    }
+  </script>
+
+  <style id="compiled-css" type="text/css">
+      body.invert {
+        filter: invert(1);
+        /*background-color:rgb(23, 22, 27);*/
+      }
+
+      .inverted{
+        filter:invert(1);
+      }
+
+      .py-5{
+        white-space:pre-line;
+      }
+      .carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .caption1{
+          color : black;
+      }
+      .caption2{
+        color: black;
+      }
+      .caption3{
+          color: white;
+      }
+      .carousel .carousel-indicators {
+        background-color: goldenrod;
+      }
+      .carousel .carousel-indicators .active {
+        background-color: black;
+      }
+      .carousel-control-next,
+      .carousel-control-prev /*, .carousel-indicators */ {
+          filter: invert(100%);
+      }
+      .whitetext{
+        color:white;
+      }
+      .blacktext{
+        color:black;
+      }
+      .bodytitle{
+        color:blue;
+      }
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+</head>
+<body style = "background-color:grey" onload = "swapText2();onloadf()">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Zeling Li (Qualifications) </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link colorme" href="../../Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Qualifications.html">Qualifications</a> <!--Make links to other pages-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Portfolio.html">Portolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../Services.html">Services</a>
+        </li>
+        <button onclick = "flipcolors()" class="blacktext">Toggle Color</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-interval = "false">
+    <div class="carousel-indicators">
+      <button type="button" onclick = "swapText1()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" onclick = "swapText2()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+      <button type="button" onclick = "swapText3()" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item "  id = "background1" style="background-image: url('../../CU6.png')" >
+        <div class="carousel-caption caption1" >
+          <!--<p class = "blacktext" href = "">Scroll Down for more details!</p>-->
+          <a class = "blacktext" href="../../Certificate.pdf" download>
+            <p>Download my Certificate</p>
+          </a>
+
+        </div>
+      </div>
+      <div class="carousel-item active" id = "background2" style="background-image: url('../../Help.png')" >
+        <div class="carousel-caption caption2" >
+          <!--<p class = "blacktext" href = "">Scroll Down for more details!</p>-->
+          <a class = "blacktext" href="../../Resume.pdf" download>
+            <p>Download my Resume</p>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="carousel-item Scale-Me" id = "background3" style="background-image: url('../../Images/G4-page-001.jpg')" >
+        <div class="carousel-caption caption3" > <!--js automatically handles iterables element wise, it would seem... which is convenient?-->
+          <h5>I have a glider pilots license! (in lieu of a more relevant qualification to put here)</h5>
+          <!--<p class = "whitetext" href = "">Scroll Down for more details!</p>-->
+          <a class = "whitetext" href="../../GliderLicenseOriented.jpg" download>
+            <p>Download my License</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <p id = "titlecontent" class="bodytitle"></p>
+    <p class="" id = "textcontent"></p>
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks"></a>
+    
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks2"></a>
+
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks3"></a>
+
+    <a target = "_blank" rel = "noopener noreference" class = "whitetext" id = "textlinks4"></a>
+
+  </div>
+</section>
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "yezxdwv3"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+
+
+</body></html>
